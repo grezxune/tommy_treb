@@ -3,13 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
+My name is Tommy Treb and I am a software developer. I love generating innovative ideas and putting them to work with code. I also have the same love (and sometimes hate) for the game of billiards. It is just too fun.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I have a few websites for you to check out if you'd like:
+- [PlayFree][playfree]
+- [Hilltop Woods][hilltop-woods]
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+[playfree]:http://playfree.io
+[hilltop-woods]:http://hilltopwoods.com
