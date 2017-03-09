@@ -2,7 +2,6 @@
 layout: post
 title:  "PlayFree Public Launch!"
 date:   2017-03-8 16:27:11 -0600
-categories: jekyll update
 ---
 So today is the day I publicly announced [PlayFree][playfree] for the first time! Up to this point, it has just been private parties I have told about the site.
 
