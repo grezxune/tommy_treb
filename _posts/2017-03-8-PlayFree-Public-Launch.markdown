@@ -20,7 +20,7 @@ The site can be kind of complicated if you have not been told how it works, and 
 
 I think that is a decent rundown of the workflows available to public users of the site. I believe this will be an extremely useful tool once there is enough data in the system to draw repeated visits from users. I definitely plan on using it when I travel! I am always going to choose a place that provides a free game, and in turn I will be willing to buy more food, drinks, etc. from them. I see this as a win-win opportunity for us and venues alike! In the future I plan to offer venues premium spots in the list of search results, so if their venue appears it will be at the top of the page.
 
-So if you know of some venues that host free games, head on over to [PlayFree][playfree] and enter them in! If you find any bugs or have ideas to help make the site better, don't hesitate to let me know by shooting me an email at tomtrezb2003@gmail.com.
+So if you know of some venues that host free games, head on over to [PlayFree][playfree] and enter them in! If you find any bugs or have ideas to help make the site better, please don't hesitate to let me know by shooting me an email below.
 
 Enjoy the site!
 
