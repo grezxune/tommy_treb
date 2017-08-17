@@ -9,8 +9,8 @@ I have a few websites for you to check out if you'd like:
 
 - [PlayFree][playfree]
 - [Hilltop Woods][hilltop-woods]
-- [Image Scraper][image-scraper]
+- [Image Fetcher][image-fetcher]
 
 [playfree]:http://playfree.io
 [hilltop-woods]:http://hilltopwoods.com
-[image-scraper]:http://image-scraper.tommytreb.com
+[image-fetcher]:http://image-fetcher.tommytreb.com
