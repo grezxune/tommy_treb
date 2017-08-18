@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Image Scraper Python App"
-date:   2017-08-18 12:05:39 -0600
+date:   2017-08-18 1:05:39 -0600
 ---
 
 # Image Scraper & Getting Around Hotlinking
@@ -38,6 +38,8 @@ I may, in the future, add a button to download all images returned from a given 
 
 # Closing remarks
 
-The app doesn't work for *every* web page, but it does work for most. If it doesn't work on the URL you're trying, it may just be that they host their images in a non-traditional way. I hope this was useful and I helped at least someone figure out what hotlinking was, and maybe even help someone get around hotlink protection as well! I have hosted the live site [here](http://www.image-fetcher.tommytreb.com) using what is called a "Dyno" from [Heroku](http://www.heroku.com).
+The app doesn't work for *every* web page, but it does work for most. If it doesn't work on the URL you're trying, it may just be that they host their images in a non-traditional way. Some sites that do work rather well are animalplanet.com, 4chan.org boards, and reddit boards. These are by no means the only ones that work, though.
+
+I hope this was useful and I helped at least someone figure out what hotlinking was, and maybe even help someone get around hotlink protection as well! I have hosted the live site [here](http://www.image-fetcher.tommytreb.com) using what is called a "Dyno" from [Heroku](http://www.heroku.com).
 
 Pretty cool, huh?
