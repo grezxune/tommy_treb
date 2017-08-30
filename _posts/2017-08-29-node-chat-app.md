@@ -41,7 +41,7 @@ io.on('connection', (socket) => {
 });
 {% endhighlight %}
 
-So on the 'connection' event (a built in event with Socket.io), the new socket is sent to the function callback. Inside of here, any number of things can be done with the new socket, including listening to new events, like 'tommyIsAwesome', or 'baconIsGross' and they are all handled the same. There are a few things that can change though, and this is the data and callback that is passed to the callback of the event, and the parameters passed to the callback. Okay, if that was confusing, I'll break that down per line from the example I gave above.
+So on the 'connection' event (a built in event with Socket.io), the new socket is sent to the function callback. Inside of here, any number of things can be done with the new socket, including listening to new events, like 'tommyIsAwesome', or 'baconIsGross' (breaking news, this is actually true now!) and they are all handled the same. There are a few things that can change though, and this is the data and callback that is passed to the callback of the event, and the parameters passed to the callback. Okay, if that was confusing, I'll break that down per line from the example I gave above.
 
 The parameters passed in to the callback function when the event 'tommyIsAwesome' is fired (line 8) can change depending on what is needed. By this I mean the data and callback parameters are optional, and the data parameter can be any object, while the callback parameter should be a function.
 
@@ -101,11 +101,7 @@ This code would most likely be on the client to handle the update, as it is fire
 
 # Making It Come To Life
 
-I'm not going to go over every feature I implemented, but we now have the basics of how to use socket.io to emit and handle events from the client and server alike. Every bit of communication besides the initial HTTP request for the page is done via these sockets in this project. I think that's pretty awesome! I also got a lot more done than the tutorial walked through, because it was so easy to see the potential that this unlocked. Learning how to use sockets was one of the barriers I had as a developer. It was something I had known about, and wanted to use so I could learn it but somehow it kept eluding me. I finally got my feet wet and I'm glad I did!
-
-# Things To Take Furthur
-
-There are a couple features which I plan to add to this before I am finished. One of which is auto-scrolling the chat window when a new message comes in. Currently you need to manually scroll to the bottom to see the latest messages once the chat window initially fills up. I'd also like to create a message on the home page if there's no rooms currently created to make this a little more clear.
+I'm not going to go over every feature I implemented, but we now have the basics of how to use Socket.io to emit and handle events from the client and server alike. Every bit of communication besides the initial HTTP request for the page is done via these sockets in this project. I think that's pretty awesome! I also got a lot more done than the tutorial walked through, because it was so easy to see the potential that this unlocked. Learning how to use sockets was one of the barriers I had as a developer. It was something I had known about, and wanted to use so I could learn it but somehow it kept eluding me. I finally got my feet wet and I'm glad I did!
 
 # Closing Remarks
 
