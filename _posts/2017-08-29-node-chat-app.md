@@ -103,6 +103,8 @@ This code would most likely be on the client to handle the update, as it is fire
 
 I'm not going to go over every feature I implemented, but we now have the basics of how to use Socket.io to emit and handle events from the client and server alike. Every bit of communication besides the initial HTTP request for the page is done via these sockets in this project. I think that's pretty awesome! I also got a lot more done than the tutorial walked through, because it was so easy to see the potential that this unlocked. Learning how to use sockets was one of the barriers I had as a developer. It was something I had known about, and wanted to use so I could learn it but somehow it kept eluding me. I finally got my feet wet and I'm glad I did!
 
+There is NO persistence with this app! If you are not in the chat room that receives a message when it is sent, you will never see it. There is no history, it's all gone as soon as the client is refreshed. I think this is a cool feature because most chats have some persistence and there's a way to view old messages, not here!
+
 # Closing Remarks
 
 I am loving these small projects, and I think they are instrumental in professional development and learning. It's fun to create something that is usable and practical, and learning new technology along the way is just an amazing bonus. I'd highly recommend giving it a shot, even if programming isn't your thing, try a new project that is more relative to your interests. It's worth it, I promise!
