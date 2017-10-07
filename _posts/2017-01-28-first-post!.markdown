@@ -2,6 +2,7 @@
 layout: post
 title:  "My First Blog"
 date:   2017-01-28 15:13:11 -0600
+comments: true
 ---
 Well this is my first blog post, as you probably already know by being here. I am currently sitting in my hotel room after just losing out of the B division 8 ball WSPA (Wsiconsin Pool Players Association) state tournament.
 

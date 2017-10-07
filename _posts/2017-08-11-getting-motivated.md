@@ -2,6 +2,7 @@
 layout: post
 title:  "Getting Motivated"
 date:   2017-08-11 12:01:11 -0600
+comments: true
 ---
 
 # Are You Motivated?
