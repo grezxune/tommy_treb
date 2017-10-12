@@ -32,3 +32,5 @@ exclude:
   - Gemfile.lock
 
 google_analytics: true
+disqus:
+  shortname: "tommytreb"
