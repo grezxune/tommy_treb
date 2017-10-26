@@ -1,0 +1,12 @@
+.description {
+    font-family: $subheader-font;
+    text-align: center;
+    font-size: 20px;
+    margin: $s-size 0;
+    color: $color2;
+    @include fade-in(2s, 0s);
+
+    @media (min-width: $desktop-breakpoint) {
+        margin: $s-size 0 0 0;
+    }
+}

@@ -1,0 +1,110 @@
+.page-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.page-content__item {
+    background-color: $mainColor;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, 0.1);
+    font-family: $subheader-font;
+    width: 100%;
+    margin: $xs-size;
+    @include fade-in(2s, 0s);
+
+    @media (min-width: $desktop-breakpoint) {
+        width: 80%;
+    }
+}
+
+.page-content__item__title {
+
+}
+
+.page-content__post-index__item {
+    color: rgba(81, 81, 81, .4);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    > * {
+        margin: 5px;
+    }
+
+    @media (max-width: $desktop-breakpoint) {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+}
+
+.page-content__post-index__title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: $bg-blue;
+
+    a {
+        text-decoration: none;
+        color: $bg-blue;
+        transition-property: color;
+        transition-duration: 1s;
+        transition-delay: 0s;
+        font-family: $subheader-font;
+
+        &:hover {
+            color: $color2;
+        }
+    }
+}
+
+.page-content__post {
+    margin: $s-size;
+
+    > h1 {
+        text-align: center;
+    }
+}
+
+.page-content__post__title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: $bg-blue;
+
+    margin: 0 $s-size;
+    border-bottom: 1px solid $bg-blue;
+
+    a {
+        text-decoration: none;
+        color: $bg-blue;
+        transition-property: color;
+        transition-duration: 1s;
+        transition-delay: 0s;
+        font-family: $subheader-font;
+
+        &:hover {
+            color: $color2;
+        }
+    }
+}
+
+.page-content__post__date {
+    color: rgba(81, 81, 81, .4);
+    @media (min-width: $desktop-breakpoint) {
+        margin-right: $xs-size;
+    }
+}
+
+.page-content__post-index__date {
+    color: rgba(81, 81, 81, .4);
+    @media (min-width: $desktop-breakpoint) {
+        margin-right: $xs-size;
+    }
+}

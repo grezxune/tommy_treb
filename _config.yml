@@ -1,36 +1,75 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site
+title:          Tommy Treb
+bio:            'Just a simple Jekyll theme'
+description:    "I'm a developer whose passions revolve around code and billiards"
+picture:        'assets/img/profile.jpg'
+locale:         en_US
+url:            http://tommytreb.com
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Tommy Treb
+
+# Jekyll
+permalink:      /:title/
+markdown:       kramdown
+highlighter:    rouge
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Social
+# if you don't have any of social below, comment the line.
 email: tomtrezb2003@gmail.com
-description: > #
-    I am a software developer whose passions revolve around programming and billiards.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://tommytreb.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tommytreb1
-github_username:  grezxune
+twitter: tommytreb1
+facebook: tommy.treb
+google:
+  #plus: #username
+  analytics: UA-66685838-1
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+github: grezxune
+stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+linkedin: tommytreb
+#xing: username
+# instagram: username
+# lastfm: username
+# tumblr: username
+#pinterest: username
+#foursquare: username
+# steam: trebz
+#dribbble: username
+# youtube: username
+#soundcloud: username
+#weibo: username
+#flickr: username
+#codepen: username
 
-# Build settings
-markdown: kramdown
-theme: minima
+# Paginate
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+
+# Comments
+disqus_shortname: tommytreb
+
+
+# Gems
 gems:
+  - jekyll-mentions
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
 
-google_analytics: true
-disqus:
-  shortname: "tommytreb"
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]

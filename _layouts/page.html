@@ -1,14 +1,33 @@
----
-layout: default
----
-<article class="post">
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include mobile-nav.html %}
+    <div class="ust">
+      <div class="middle">
+        <div class="header">
+          {{ site.title }}
+        </div>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+        <div class="show-for-desktop menu--desktop">
+            {% include nav.html %}
+        </div>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="yazilar">
+        <div class="yazi">
+          <div class="ustr">
+            <h2>{{ page.title }}</h2>
+          </div>
+          <hr>
+          <div class="content">
+            {{ content }}
+          </div>
+        </div>
+        {% include disqus-comments.html %}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

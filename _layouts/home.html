@@ -1,22 +1,26 @@
 ---
-layout: default
+layout: alt-base
 ---
 
-<div class="home">
+<div class="content-container--stacked">
+    <div class="header__title header__title--alt blur-on-mobile-menu">
+        <span>{{ site.title }}</span>
+    </div>
+    <div class="content-container content-container--banner blur-on-mobile-menu">
+        <div class="content-container">
+            <div class="image--profile">
+                <img alt="{{ site.title }}" src="{{ site.url }}/{{ site.picture }}">
+            </div>
+            <div class="content-container--stacked">
+                <div class="show-for-desktop menu--alt">
+                    {% include nav.html %}
+                </div>
+                <div class="description">
+                    {{ site.description }}
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    {% include social-links.html %}
 </div>

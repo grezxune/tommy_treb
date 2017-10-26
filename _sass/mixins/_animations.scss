@@ -1,0 +1,3 @@
+@mixin fade-in ($time: 1s, $delay: 0s) {
+    animation: fade-in $time ease $delay 1 normal;
+}

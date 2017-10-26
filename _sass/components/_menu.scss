@@ -1,0 +1,105 @@
+.menu {
+    ul {
+        text-decoration: none;
+        font-size: 1.8rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        list-style: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: $desktop-breakpoint) {
+            margin: $s-size 0 $s-size $s-size;
+            flex-flow: column nowrap;
+        }
+
+        li {
+            a {
+                margin: 0 $xs-size;
+                color: $bg-blue;
+                font-family: $header-font;
+                text-decoration: none;
+                transition-property: color, border-color;
+                transition-duration: 1s;
+                transition-delay: 0s;
+
+                &:hover {
+                    border-bottom: 5px solid $color2;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}
+
+.menu--mobile {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 100%;
+    z-index: 1;
+    background-color: $mainColor;
+    box-shadow: 0px 0px 20px 2px rgba(71, 71, 71, 1);
+}
+
+.menu--alt {
+    nav {
+        ul {
+            li {
+                @media (max-width: $desktop-breakpoint) {
+                    margin: 0 0 $s-size 0;
+                }
+
+                text-align: left;
+
+                a {
+                    color: $bg-blue;
+                    font-family: $header-font;
+                    transition-property: background-color;
+                    transition-duration: .5s;
+                    padding: 10px;
+
+                    @media (max-width: $desktop-breakpoint) {
+                        margin: 0 !important;
+                    }
+
+                    &:hover {
+                        border-radius: 6px;
+                        border: none;
+                        border-radius: 3px;
+                        background-color: $bg-blue;
+                        color: $mainColor;
+                        text-shadow: 1px 1px 5px #000;
+                        box-shadow: inset 0px 0px 10px 2px rgba(81, 81, 81, .6);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu--mobile__button {
+    font-size: 28px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+    color: $bg-blue;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(81, 81, 81, 0.3) !important;
+
+    &:hover{
+        cursor: pointer;
+        text-shadow: 1px 1px 4px rgba(81, 81, 81, 1) !important;
+    }
+}
+
+.menu--mobile--alt {
+    .menu--mobile__button {
+        color: $mainColor;
+    }
+}

@@ -1,0 +1,13 @@
+@import "./settings";
+@import "./animations";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: $bg-blue;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+}

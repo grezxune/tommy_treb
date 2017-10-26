@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+        {% include mobile-nav.html %}
+
+        <div class="blur-on-mobile-menu header">
+            <div class="header__title">
+                {{ site.title }}
+            </div>
+            <div class="show-for-desktop">
+                {% include nav.html %}
+            </div>
+        </div>
+
+        <div class="blur-on-mobile-menu">
+            {{ content }}
+        </div>
+
+        <div class="blur-on-mobile-menu">
+            {% include footer.html %}
+        </div>
+        {% include scripts.html %}
+    </body>
+</html>

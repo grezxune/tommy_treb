@@ -1,0 +1,19 @@
+.image {
+
+}
+
+.image--profile {
+    width: 170px;
+    height: 170px;
+    border-radius: 90px;
+    display: block;
+    background: $bg-blue;
+    box-shadow: 0px 0px 20px 2px rgba(82, 82, 82, 1) inset;
+    @include fade-in(2s, 0s);
+
+    img	{
+        border-radius: 90px;
+        width: 170px;
+        height: 170px;
+    }
+}
