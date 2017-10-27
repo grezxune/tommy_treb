@@ -11,3 +11,32 @@ html, body {
     margin: 0px;
     width: 100%;
 }
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $mainColor;
+    border-radius: 3px;
+    &:hover {
+        background-color: #2980b9;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+    }
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* End Scrollbar */
+
+::selection {
+    background: $bg-blue;
+
+    /* WebKit/Blink Browsers */
+    color: $mainColor;
+}

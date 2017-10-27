@@ -2,17 +2,19 @@
 layout: default-base
 ---
 
-<div class="blur-on-mobile-menu page-content">
-    {% for post in site.posts %}
-        {% if post.project == null %}
-        <div class="page-content__item">
-            <div class="page-content__post-index__item" data-href="{{ site.url }}{{ post.url }}">
-                <h2 class="page-content__post-index__title">{{ post.title }}</h2>
-                <div class="page-content__post-index__date">
-                    {{ post.date | date_to_string }}
+<div class="blur-on-mobile-menu content-container">
+    <div class="page-content">
+        {% for post in site.posts %}
+            {% if post.project == null %}
+            <div class="page-content__item">
+                <div class="page-content__post-index__item" data-href="{{ site.url }}{{ post.url }}">
+                    <h2 class="page-content__post-index__title">{{ post.title }}</h2>
+                    <div class="page-content__post-index__date">
+                        {{ post.date | date_to_string }}
+                    </div>
                 </div>
             </div>
-        </div>
-        {% endif %}
-    {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </div>
 </div>

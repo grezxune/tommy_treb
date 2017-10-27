@@ -14,13 +14,14 @@ layout: default-base
                 {% endif %}
             </div>
             <div class="page-content__post">
-                {{ content }}
+                    {{ content }}
             </div>
         </div>
+
+        {% if page.comments %}
         <div class="page-content__item">
-            {% if page.comments %}
-                {% include disqus-comments.html %}
-            {% endif %}
+            {% include disqus-comments.html %}
         </div>
+        {% endif %}
     </div>
 </div>

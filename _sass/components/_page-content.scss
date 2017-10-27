@@ -9,14 +9,21 @@
 .page-content__item {
     background-color: $mainColor;
     border-radius: 3px;
-    box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, 0.1);
+    box-shadow: 10px 10px 20px 2px rgba(71, 71, 71, 1);
     font-family: $subheader-font;
-    width: 100%;
+    max-width: $content-width;
     margin: $xs-size;
+    width: 100%;
+    transition-property: box-shadow;
+    transition-duration: 1s;
     @include fade-in(2s, 0s);
 
     @media (min-width: $desktop-breakpoint) {
         width: 80%;
+    }
+
+    &:hover {
+        box-shadow: 1px 1px 2px 2px rgba(71, 71, 71, 0.8);
     }
 }
 
@@ -36,6 +43,7 @@
     transition-property: border-color, color, background;
     transition-duration: 1.5s;
     border: 2px solid transparent;
+    border-radius: 3px;
 
     &:hover {
         .page-content__post-index__title, .page-content__post-index__date {
@@ -77,9 +85,22 @@
     }
 }
 
+.page-content__post-index__date {
+    color: rgba(81, 81, 81, .4);
+    @media (min-width: $desktop-breakpoint) {
+        margin-right: $xs-size;
+    }
+}
+
 .page-content__post {
     margin: $s-size;
 
+    > h1 {
+        text-align: center;
+    }
+}
+
+.page-content__post__content {
     > h1 {
         text-align: center;
     }
@@ -110,13 +131,6 @@
 }
 
 .page-content__post__date {
-    color: rgba(81, 81, 81, .4);
-    @media (min-width: $desktop-breakpoint) {
-        margin-right: $xs-size;
-    }
-}
-
-.page-content__post-index__date {
     color: rgba(81, 81, 81, .4);
     @media (min-width: $desktop-breakpoint) {
         margin-right: $xs-size;
