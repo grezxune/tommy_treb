@@ -54,15 +54,14 @@ $(document).ready(function() {
         var currentResize = new Date().getTime();
 
         if (currentResize > timeSinceLastResize + 1000) {
+            console.log('resizing...');
             var mobileMenu = $('.menu--mobile');
             var menuVisible = mobileMenu.css('display') !== 'none';
             var shouldToggleColor = mobileMenu.parent().hasClass('menu--mobile--alt');
 
             if (menuVisible) {
+                console.log('menu is visible');
                 $('.menu--mobile__button').next('.menu--mobile').animate({ width: 'toggle' }, 350);
-                $('.blur-on-mobile-menu').css({
-                    'filter': 'blur(0px)'
-                });
 
                 if (shouldToggleColor) {
                     $('.menu--mobile__button').css({
@@ -70,6 +69,10 @@ $(document).ready(function() {
                     });
                 }
             }
+
+            $('.blur-on-mobile-menu').css({
+                'filter': 'blur(0px)'
+            });
         }
 
         timeSinceLastResize = new Date().getTime();

@@ -2,7 +2,6 @@
 layout: post
 title: About Me
 tags: [about, tommy, treb, python, mongo, mongodb, react, reactjs, firebase, node, nodejs]
-date: 2017-10-25
 ---
 
 My name is Tommy Treb and I am a software developer. I love generating innovative ideas and putting them to work with code. I also have the same love (and sometimes hate) for the game of billiards. It is just too fun.

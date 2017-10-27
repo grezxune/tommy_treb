@@ -2,7 +2,6 @@
 layout: post
 title: All Projects
 excerpt: "A List of Projects"
-date: 2017-10-25
 ---
 
 I have a few websites for you to check out if you'd like:

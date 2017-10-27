@@ -33,21 +33,16 @@
     flex-flow: row nowrap;
     padding: $xs-size;
     cursor: pointer;
-    transition-property: border, color, background, justify-content;
-    transition-duration: 1s;
+    transition-property: border-color, color, background;
+    transition-duration: 1.5s;
+    border: 2px solid transparent;
 
     &:hover {
-        .page-content__post-index__title {
+        .page-content__post-index__title, .page-content__post-index__date {
             color: $mainColor;
         }
 
-        .page-content__post-index__date {
-            display: none;
-        }
-
-        justify-content: center;
-
-        border: 1px solid $mainColor;
+        border-color: $mainColor;
         background: $bg-blue;
     }
 
