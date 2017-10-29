@@ -5,7 +5,7 @@ layout: default-base
 <div class="blur-on-mobile-menu content-container">
     <div class="page-content">
         {% for post in site.posts %}
-            {% if post.project == null %}
+            {% if post.project == null or post.project == false %}
             <div class="page-content__item">
                 <div class="page-content__post-index__item" data-href="{{ site.url }}{{ post.url }}">
                     <h2 class="page-content__post-index__title">{{ post.title }}</h2>

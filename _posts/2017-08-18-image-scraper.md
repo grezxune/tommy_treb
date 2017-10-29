@@ -3,6 +3,7 @@ layout: post
 title:  "Image Scraper Python App"
 date:   2017-08-18 1:05:39 -0600
 comments: true
+project: false
 ---
 
 # Image Scraper & Getting Around Hotlinking

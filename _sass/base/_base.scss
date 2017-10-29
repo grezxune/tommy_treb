@@ -23,7 +23,7 @@ html, body {
     background-color: $mainColor;
     border-radius: 3px;
     &:hover {
-        background-color: #2980b9;
+        background-color: darken($bg-blue, 10%);
         box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
     }
 }
@@ -39,4 +39,9 @@ html, body {
 
     /* WebKit/Blink Browsers */
     color: $mainColor;
+}
+
+a {
+    color: $bg-blue;
+    text-decoration: none;
 }
