@@ -4,7 +4,7 @@ title: About Me
 tags: [about, tommy, treb, python, mongo, mongodb, react, reactjs, firebase, node, nodejs]
 ---
 
-My name is Tommy Treb and I am a software developer. I love thinking up new ideas and bringing them to live with code. I also have the same love (and sometimes hate) for the game of billiards. It is just too fun.
+My name is Tommy Treb and I am a software developer. I love thinking up new ideas and bringing them to life with code. I also have the same love (and sometimes hate) for the game of billiards. It is just too fun.
 
 ![My movie poster]({{ "/assets/img/movie-poster.png" | absolute_url }})
 
