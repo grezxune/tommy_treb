@@ -2,6 +2,7 @@
     flex: 1;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-items: flex-start;
 
     @media(max-width: $desktop-breakpoint) {
         flex-flow: column nowrap;
