@@ -8,4 +8,4 @@ comments: true
 project: true
 ---
 
-This is a fun little web app that allows you to randomly choose one item from a list you create.
+This is a fun little web app that allows you to randomly choose one item from a list you create
