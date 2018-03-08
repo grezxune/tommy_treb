@@ -23,6 +23,13 @@ I had not been exposed to a component-style front end until this and it was a to
 # The First App
 The first project in this course is called [Indecision](http://indecision.tommytreb.com). This app is a simple concept. Essentially you as a user create a list of items, and then click a button. The app will then randomly choose one of your list items and display it; the idea is you enter in things you'd like to do but cannot decide and the app will help you out. It's a great demo of React and how it works. It contains several components, both functional and class based.
 
+### The Render Method
+Every React component needs to render something. The HTML type syntax that you will see in React is called JSX (Javascript XML), which is what gets rendered. The older versions of React do not require the use of JSX, rather it might call a method called `React.createElement` which creates DOM elements functionally. JSX reads much more naturally and is easier to read and maintain.
+
+Any given React component can only render ONE parent element. A lot of times this means a React component will return a parent div with an array of children inside of it.
+
+A functional component needs to return JSX from itself (the function), and class based components are required to contain a `render` method that also returns JSX.
+
 ### Functional React Component
 One of the main differences between functional and class React components is the ability to hold state. Functional components can only use props that are passed to it from the parent and cannot modify these values.
 {% highlight JavaScript linenos %}
