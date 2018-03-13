@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "The New CSS"
-date:   2019-03-12
 comments: true
 ---
 
