@@ -1,19 +1,18 @@
 .project-index {
-    flex: 1;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: stretch;
 
     @media(max-width: $desktop-breakpoint) {
-        flex-flow: column nowrap;
+        grid-template-columns: 1fr;
     }
 }
 
 .project-index__item {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: space-between;
+    justify-content: space-between;
     width: auto;
     padding: $s-size;
     flex: 1;
@@ -54,13 +53,25 @@
 }
 
 .project-index__item__image {
-  height: 150px;
-  width: 180px;
+  width: 50%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 	img {
-		  height: 150px;
-		  width: 180px;
-	}
+          width: 100%;
+    }
+}
+
+.project-index__tech-stack {
+    font-family: $subheader-font;
+    text-align: left;
+    font-size: $font-size-small;
+}
+
+.tech-stack__key {
+    font-weight: 900;
+}
+
+.tech-stack__value {
+    font-weight: 100;
 }

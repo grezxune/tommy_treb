@@ -1,11 +1,14 @@
 ---
 layout: post
 title:  "PlayFree"
-date:   2017-08-29 12:01:11 -0600
 image: ../assets/img/screenshot-playfree.png
 external-url: http://playfree.io
-comments: true
-project: true
+tech-stack:
+    database: "MongoDB"
+    backend: "Python"
+    web-framework: "Flask"
+    front-end-framework: "KnockoutJS"
+    other: "Google Maps API"
 ---
 
 Online directory of free games (pool, darts, shuffleboard, etc)

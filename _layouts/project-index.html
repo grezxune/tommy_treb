@@ -4,20 +4,44 @@ layout: default-base
 
 <div class="content-container">
     <div class="page-content project-index">
-    {% for post in site.posts %}
-        {% if post.project == true %}
-        <div class="page-content__item project-index__item">
-            <div class="project-index__item__image">
-                <img src="{{ post.image }}" alt="">
+    {% for post in site.projects %}
+    <div class="page-content__item project-index__item">
+        <div class="project-index__item__image">
+            <img src="{{ post.image }}" alt="">
+        </div>
+        <div class="project-index__item__title">
+            <a href="{{ post.external-url }}" target="_blank">{{ post.title }}</a>
+        </div>
+        {% if post.tech-stack %}
+        <div class="project-index__tech-stack">
+            <div>
+                <span class="tech-stack__key">Database - </span>
+                <span class="tech-stack__value">{{ post.tech-stack.database }}</span>
             </div>
-            <div class="project-index__item__title">
-                <a href="{{ post.external-url }}" target="_blank">{{ post.title }}</a>
+            <div>
+                <span class="tech-stack__key">Backend - </span>
+                <span class="tech-stack__value">{{ post.tech-stack.backend }}</span>
             </div>
-            <div class="project-index__excerpt">
-                {{ post.excerpt }}
+            <div>
+                <span class="tech-stack__key">Web Framework - </span>
+                <span class="tech-stack__value">{{ post.tech-stack.web-framework }}</span>
             </div>
+            <div>
+                <span class="tech-stack__key">Front End - </span>
+                <span class="tech-stack__value">{{ post.tech-stack.front-end-framework }}</span>
+            </div>
+            {% if post.tech-stack.other %}
+            <div>
+                <span class="tech-stack__key">Other - </span>
+                <span class="tech-stack__value">{{ post.tech-stack.other }}</span>
+            </div>
+            {% endif %}
         </div>
         {% endif %}
+        <div class="project-index__excerpt">
+            {{ post.excerpt }}
+        </div>
+    </div>
     {% endfor %}
     </div>
 </div>

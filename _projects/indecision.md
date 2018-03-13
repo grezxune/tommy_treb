@@ -1,11 +1,14 @@
 ---
 layout: post
 title:  "Indecision React App"
-date:   2017-08-29 12:01:11 -0600
 image: ../assets/img/screenshot-indecision.png
 external-url: http://indecision.tommytreb.com
-comments: true
-project: true
+tech-stack:
+    database: "N/A"
+    backend: "Node"
+    web-framework: "Express"
+    front-end-framework: "React"
+    other: "Webpack"
 ---
 
 This is a fun little web app that allows you to randomly choose one item from a list you create
