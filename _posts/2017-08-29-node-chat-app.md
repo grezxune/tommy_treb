@@ -3,7 +3,6 @@ layout: post
 title:  "Node Chat App"
 date:   2017-08-29 12:01:11 -0600
 comments: true
-project: false
 ---
 
 # Another App Hits The Web!

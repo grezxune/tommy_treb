@@ -3,30 +3,29 @@ layout: post
 title:  "Learning React"
 date:   2018-03-8
 comments: true
-project: false
 ---
 
-It's been a while since I've gone through the course now, but I've been using React for quite a few months at this point. I started learning react because of a recommendation from a friend, and let me tell ya, it's freakin' cool! The course that I took to learn React can be found [here](https://www.udemy.com/react-2nd-edition/learn/v4/overview) on Udemy.
+It's been a while since I've gone through the course, but I've been using React for quite a few months now. I started learning react because of a recommendation from a friend, and let me tell ya, it's freakin' cool! The course that I took to learn React can be found [here](https://www.udemy.com/react-2nd-edition/learn/v4/overview) on Udemy.
 
 I'm a huge fan of Udemy for a few reasons:
 
 1.  The courses are almost always on sale (don't ever pay full price for one).
-2.  The course content is often very all-inclusive and teaches a full concept or skill.
+2.  The course content is often all-inclusive and teaches a full concept or skill.
 3.  You get to keep the course forever!
 4.  You get a certificate of completion for finishing a course, which can become a point on a resume, etc.
-5.  Often times you are building apps throughout the course which in my case can be hosted as finished products on the internet! If you're not doing web technologies, obviously this may not apply, but they're still very hands on most of the time.
+5.  Often times you are building apps throughout the course, which in my case, can be hosted as finished products on the internet! If you're not doing web technologies, obviously this may not apply, but they're still very hands on most of the time.
 
-Alright, so if I haven't convinced you Udemy is a great resource yet, I don't think I can! Let's move on.
+Alright, so if I haven't convinced you that Udemy is a great resource yet, I don't think I can! Let's move on.
 
-I had not been exposed to a component-style front end until this and it was a totally new concept for me. It felt weird at first, but it's so easy to think in the component mindset once you start to see how it works, so let's get into it!
+I had not been exposed to a component-style front end until this. It was a totally new concept for me. It felt weird at first, but it's so easy to think in the component mindset once you start to see how it works. Let's get into it!
 
 # The First App
-The first project in this course is called [Indecision](http://indecision.tommytreb.com). This app is a simple concept. Essentially you as a user create a list of items, and then click a button. The app will then randomly choose one of your list items and display it; the idea is you enter in things you'd like to do but cannot decide and the app will help you out. It's a great demo of React and how it works. It contains several components, both functional and class based.
+The first project in this course is called [Indecision](http://indecision.tommytreb.com). This app is a simple concept. Essentially, you as a user create a list of items, and then click a button. The app will then randomly choose one of your list items and display it. The idea is this; you enter in the things you'd like to do but cannot decide what to do, and the app will help you out! It's a great demo of React and how it works. It contains several components, both functional and class based.
 
 ### The Render Method
-Every React component needs to render something. The HTML type syntax that you will see in React is called JSX (Javascript XML), which is what gets rendered. The older versions of React do not require the use of JSX, rather it might call a method called `React.createElement` which creates DOM elements functionally. JSX reads much more naturally and is easier to read and maintain.
+Every React component needs to render something. The HTML type syntax that you will see in React is called JSX (Javascript XML), which is what will be rendered to the screen. The older versions of React do not require the use of JSX, rather it might call a method called "`React.createElement`" which creates DOM elements functionally. JSX reads much more naturally and is easier to read and maintain.
 
-Any given React component can only render ONE parent element. A lot of times this means a React component will return a parent div with an array of children inside of it.
+Any given React component can only render ONE parent element. A lot of the time, this means a React component will return a parent div with an array of children inside of it.
 
 A functional component needs to return JSX from itself (the function), and class based components are required to contain a `render` method that also returns JSX.
 
@@ -43,10 +42,10 @@ const Header = (props) => (
 );
 {% endhighlight %}
 
-If you need the ability to have your component update some values and persist or display them, you'd want to take a look at class based components.
+If you need the ability to have your component update some values and persist or display them, you'd want to take a look at class-based components.
 
 ### Class React Component
-Here we're able to see that the class has a state variable associated with it which is an object. This object should never be manipulated manually, rather using the `this.setState()` method provided by React. Using `this.setState()` will automatically rerender the component and update all values on the screen. If you're displaying anything or deriving anything from state, it will show the updated version once this rerender occurs.
+Here we're able to see that the class has a state variable associated with it which is an object. This object should never be manipulated manually. Rather, using the "`this.setState()`" method provided by React. Using "`this.setState()`" will automatically re-render the component and update all values on the screen. If you're displaying anything or deriving anything from state, it will show the updated version once this re-render occurs.
 
 {% highlight JavaScript linenos %}
 export default class AddOption extends React.Component {
@@ -87,10 +86,10 @@ export default class AddOption extends React.Component {
 }
 {% endhighlight %}
 
-In this particular example, the `error` attribute from state is able to be updated by this component, and a paragraph tag will be conditionally rendered depending on the "state" of the class's state.
+In this particular example, the `error` attribute from the class's state object is able to be updated by this component using "`this.setState()`". This attribute from the component's state is used to contitionally render the paragraph tag depending on the "state" of the class's state. If the `state.error` value exists, then the paragraph tag will be rendered. This is a common practice when needing to conditionally render something in a component, and can be applied using more than just state. Props or any other value can be used for this purpose as well.
 
 # Putting the Building Blocks Together
-Once these components are developed, they can be reused any number of times throughout your project! This is one of the great features of a component based library.
+Once these components are developed, they can be reused any number of times throughout your project! This is one of the great features of a component-based library.
 
 Generally you've got a single entrance point into your app, and from there you start to compose these components to create your view(s). The file that does this in the Indecision app is very succinct and clean.
 
@@ -108,13 +107,13 @@ ReactDOM.render(
 )
 {% endhighlight %}
 
-This component renders a React component named IndecisionApp which is imported from a local file. This custom React component is rendered inside of the DOM element with the id of 'app'. You can see here that this is done by passing the React element to render, and the element to render it in to the `ReactDOM.render` method. This is something that comes with the `'react-dom'` package that is required to render components using React. There's some things to keep in mind when dealing with custom React components:
+This component renders a React component named "IndecisionApp" which is imported from a local file. This custom React component is rendered inside of the DOM element with the 'id' of 'app'. You can see here that this is done by passing the React element to render, and the element to render it in to the "`ReactDOM.render`" method. This is something that comes with the "`react-dom`" package that is required to render components using React. There are some things to keep in mind when dealing with custom React components:
 
-1. They're are always capitalized elements following the camelcase naming convention, whereas html elements are lowercase and normally only one word. The project will not display the component if you use a lowercase component name.
-2. You need to import them, or define them in the same file. I can't imagine there's too many cases when you'd want to do the latter though, as it creates a much more maintainable codebase with them being separated.
-3. You do not need to self-close the component's tag. You can pass children to them in between the opening and closing tags. The elements passed to the component in this fashion are accessible via the `props.children` property.
+1. They are always capitalized elements following the camelcase naming convention, whereas html elements are lowercase and normally only one word. The project will not display the component if you use a lowercase component name.
+2. You need to import them, or define them in the same file. I can't imagine that there are too many cases when you'd want to do the latter though, as it creates a much more maintainable codebase with them being separated.
+3. You do not need to self-close the component's tag. You can pass children to them in between the opening and closing tags. The elements passed to the component in this fashion are accessible via the "`props.children`" property.
 
-So this renders an IndecisionApp element, what the heck is that?
+So this renders an IndecisionApp element. Well what the heck is that?
 
 ### The \<IndecisionApp /> Component
 This component has quite a bit of code for handling actions, so I will omit some lines here.
@@ -189,25 +188,25 @@ export default class IndecisionApp extends React.Component {
 {% endhighlight %}
 
 ### Why Is There Omitted Code?
-The missing code here is event handler code, specifically `handlePick`, `handleDeleteOptions`, `handleDeleteOption`, `handleAddOption`, and `handleClearSelectedOutput`.
+The missing code here is event handler code, specifically "`handlePick`", "`handleDeleteOptions`", "`handleDeleteOption`", "`handleAddOption`", and "`handleClearSelectedOutput`".
 
-These methods live here because I'm not using any pattern for state management besides out of the box functionality from React. There are other ways to handle this such as Redux or GraphQL but that's out of the scope for this post.
+These methods live here because I'm not using any pattern for state management besides out-of-the-box functionality from React. There are other ways to handle this such as Redux or GraphQL but that's out of the scope for this post.
 
 Essentially, if one of these other patterns were followed/implemented these methods could live in the components that use them, and the state would be shared throughout the app. This alleviates the need for a parent component like this to house the state and act as a controller for it.
 
 ### What Are Those Other Methods?
-The three methods `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` are React lifecycle methods. These are not required, and in fact the `componentWillUnmount` method could just be removed from this file as it clearly does nothing useful. It was part of the React course to demonstrate when that method is called in the lifecycle of a component.
+The three methods "`componentDidMount`", "`componentDidUpdate`", and "`componentWillUnmount`" are React lifecycle methods. These are not required, and in fact, the "`componentWillUnmount`" method could just be removed from this file, as it clearly does nothing useful. It was part of the React course to demonstrate when that method is called in the lifecycle of a component.
 
-The [React documentation](https://reactjs.org/docs/react-component.html) has really great explanations of each of these methods and when to or not to use them. The lifecycle method that I use the most is `componentDidMount`. This is where AJAX requests can be fired off from to gather data for a component.
+The [React documentation](https://reactjs.org/docs/react-component.html) has really great explanations of each of these methods and when to or not to use them. The lifecycle method that I use the most is "`componentDidMount`". This is where AJAX requests can be fired off to gather data for a component.
 
 # The Next project
-The final project in the React course introduces some new concepts. Namely it introduces Redux (which I mentioned earlier), and it also uses Firebase to store data and authenticate users. It's pretty cool that you get a finished app out of this course that utilizes these technologies!
+The final project in the React course introduces some new concepts. Namely it introduces Redux (which I mentioned earlier), and also uses Firebase to store data and authenticate users. It is pretty cool that you get a finished app out of this course that utilizes these technologies!
 
-The app is called [Expensify](http://expensify.tommytreb.com) and is absolutely a real world usable app when you're done. It allows a user to log in and enter expenses and some other information. A user can filter or search their expenses and see how many there are and the total. This is a very extensible app that could use some added features after the course is done guiding you through the basics. Some graphs could easily be added to show visualization of a user's data, etc.
+The app is called [Expensify](http://expensify.tommytreb.com) and is absolutely a real world usable app when you're done. It allows a user to log in and enter expenses and some other information. A user can filter or search their expenses and see how many there are and the total. This very extensible app could use some added features after the course is done guiding you through the basics. Some graphs could easily be added to show visualization of a user's data, etc.
 
 I will consider creating a second part to this post about the Expensify app, as this one is getting a bit lengthy. I can get into what exactly Redux does in that post as well, so keep an eye out for that blog!
 
 # Conclusion
-The amount of value gained from a simple $10-$20 purchase on Udemy is unmatched. You learn so many valuable and real world skills, and you can revisit them at any time for reference. I have enjoyed taking many Udemy courses and I'm sure I'll continue this trend.
+The amount of value gained from a simple $10-$20 purchase on Udemy is unmatched. You learn so many valuable and real world skills, and you can revisit them at any time for reference. I have enjoyed taking many Udemy courses and I'm sure I will continue this trend.
 
 I hope this was useful and/or interesting! If it was I'd love to hear from you in the comments below.
